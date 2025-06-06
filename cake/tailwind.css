@@ -1,0 +1,197 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Smooth transitions */
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effects for cake cards */
+.cake-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cake-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image hover effects */
+.cake-card img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.cake-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f472b6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #db2777;
+}
+
+/* Loading animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 0.875rem;
+  }
+}
+
+/* Button hover effects */
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Search input focus effect */
+input:focus {
+  box-shadow: 0 0 0 3px rgba(244, 114, 182, 0.2);
+}
+
+/* Social media icons hover effect */
+a:hover svg {
+  transform: scale(1.1);
+}
+
+/* Footer link hover effects */
+footer a {
+  transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+  color: #db2777;
+}
+
+/* Mobile menu button */
+#mobileMenuBtn {
+  transition: transform 0.2s ease-in-out;
+}
+
+#mobileMenuBtn:hover {
+  transform: scale(1.1);
+}
+
+#mobileMenuBtn:active {
+  transform: scale(0.95);
+}
+
+/* Image aspect ratio container */
+.aspect-4-3 {
+  position: relative;
+  padding-bottom: 75%;
+}
+
+.aspect-4-3 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 640px) {
+  .grid {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .grid {
+    gap: 2rem;
+  }
+}
+
+/* Card content spacing */
+.cake-card .p-4 {
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .cake-card .p-4 {
+    padding: 1.5rem;
+  }
+}
+
+/* Price and button container */
+.cake-card .flex-col {
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .cake-card .flex-col {
+    gap: 0;
+  }
+}
+
+/* Footer responsive adjustments */
+@media (max-width: 640px) {
+  footer .grid {
+    gap: 2rem;
+  }
+  
+  footer .text-center {
+    text-align: center;
+  }
+}
+
+/* Search bar responsive adjustments */
+@media (max-width: 640px) {
+  input[type="text"] {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
