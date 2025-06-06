@@ -10,7 +10,7 @@
 -  Real time search functionality
 
 ## Figma proto type
-[link](https://www.figma.com/proto/YeK4K7c3Drdf6am3NbooSA/Untitled?node-id=0-1&t=CTw3MXevcG4EPAkd-1)
+[link](https://www.figma.com/proto/YeK4K7c3Drdf6am3NbooSA/Untitled?node-id=0-1&t=fCe65iWNzavZhhRR-1)
 
 ##  Technologies Used
 
