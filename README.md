@@ -1,5 +1,4 @@
 # Chocolate-Bliss
-# 🍰 Sweet Delights Cake Cafe
 
 A modern, responsive web application for a cake cafe featuring a beautiful UI, interactive search functionality and smooth animations. Built with vanilla JavaScript and Tailwind CSS.
 
@@ -22,8 +21,7 @@ A modern, responsive web application for a cake cafe featuring a beautiful UI, i
 
 1. Clone the repository:
 ```bash
-git clone 
-https://github.com/ami798/Chocolate-Bliss.git
+git clone https://github.com/ami798/Chocolate-Bliss.git
 2. Navigate to the project directory:
 ```bash
 cd cake-cafe
